@@ -1,1 +1,2 @@
-Your desired content
+#!/bin/bash
+gcc -S $CFILE
