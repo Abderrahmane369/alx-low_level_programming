@@ -13,7 +13,7 @@ int main(void)
 int i;
 for (i = 0; i < 26; i++)
 {
-if (i != 17 && i != 4)
+if (i != 16 && i != 4)
 {
 putchar(97 + i);
 }
