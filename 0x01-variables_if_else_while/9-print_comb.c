@@ -17,8 +17,8 @@ putchar(i + 48);
 if (i != 9)
 {
 putchar(',');
-}
 putchar(' ');
+}
 }
 putchar('\n');
 return (0);
