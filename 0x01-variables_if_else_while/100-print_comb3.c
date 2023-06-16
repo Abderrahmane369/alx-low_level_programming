@@ -21,7 +21,8 @@ if (j != i && j > i)
 putchar(i + 48);
 putchar(j + 48);
 
-if (j != 9 || i != 8) {
+if (j != 9 || i != 8)
+{
 putchar(',');
 putchar(' ');
 }
