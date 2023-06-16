@@ -17,6 +17,7 @@ if (i == 16 || i == 4)
 {
 putchar(97 + i);
 }
+}
 putchar('\n');
 return (0);
 }
