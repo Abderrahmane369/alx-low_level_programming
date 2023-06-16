@@ -27,7 +27,7 @@ int main(void)
     }
     else
     {
-        printf("The number is zero\n");
+        printf("%d is zero\n");
     }
 
     return (0);
