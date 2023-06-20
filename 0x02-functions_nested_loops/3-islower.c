@@ -7,5 +7,5 @@
 
 int _islower(int c)
 {
-return (islower(c) - 1);
+return (islower(c) / 2);
 }
