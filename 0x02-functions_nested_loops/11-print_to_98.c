@@ -18,5 +18,5 @@ k--;
 else
 k++;
 }
-printf("%d", k);
+printf("%d\n", k);
 }
