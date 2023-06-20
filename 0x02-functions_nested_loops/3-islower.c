@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- * _islower - IT PREINTN
+ * _islower - checks for lowercase character.
  */
 
-int _islower(int c)
+int _islower(char c)
 {
 return islower(c);
 }
