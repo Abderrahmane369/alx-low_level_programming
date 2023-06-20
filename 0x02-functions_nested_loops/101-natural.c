@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - this dot
- * oztt - ee
+ * oztt - eits a n function e
  * Description: its an autotmata
  */
 
