@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: newton neoeoeoeo
- * Return: 0 (Success)
+ * It prints s
  */
 
 void print_alphabet(void)
