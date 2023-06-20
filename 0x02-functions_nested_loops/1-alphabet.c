@@ -21,5 +21,5 @@ for (i = 0; i < 26; i++)
 {
 putchar(97 + i);
 }
-purchar('\n');
+putchar('\n');
 }
