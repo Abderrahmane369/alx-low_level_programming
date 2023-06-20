@@ -6,7 +6,7 @@
  * Description: its an autotmata
  */
 
-void print_times_table()
+void oztt()
 {
 int k;
 int sum = 0;
@@ -23,7 +23,7 @@ printf("%d\n", sum);
 
 int main(void)
 {
-print_times_table();
+oztt();
 
 return (0);
 }
