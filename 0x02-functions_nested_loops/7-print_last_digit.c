@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * print_last_digit - hiya wahed lfunctionse
  * @n: hiyac wlahrt fojnction
