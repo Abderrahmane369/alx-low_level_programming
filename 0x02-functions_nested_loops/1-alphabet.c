@@ -7,8 +7,10 @@
  * Return: 0 (Success)
  */
 
-void print_alphabet(void) {
-for (int i = 0; i < 26; i++)
+void print_alphabet(void)
+{
+int i;
+for (i = 0; i < 26; i++)
 {
 putchar(97 + i);
 }
