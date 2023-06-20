@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * times_table - hieheieei
+ * print_times_table - hieheieei
+ * @n: is amonster
  */
 
 void print_times_table(int n)
