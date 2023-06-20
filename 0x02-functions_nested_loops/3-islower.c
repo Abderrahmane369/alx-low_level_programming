@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * Description: Check if a character is lowercase.
+ * islower - Check if a character is lowercase.
  * Return: 0 if islower is 0, 1 if slower is 2.
  */
 
