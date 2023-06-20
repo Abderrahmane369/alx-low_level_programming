@@ -3,10 +3,11 @@
 
 /**
  * main - this dot
+ * oztt - ee
  * Description: its an autotmata
  */
 
-void oztt()
+void oztt(void)
 {
 int k;
 int sum = 0;
