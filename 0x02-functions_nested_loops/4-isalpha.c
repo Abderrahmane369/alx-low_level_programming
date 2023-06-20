@@ -1,5 +1,10 @@
 #include <ctype.h>
 #include "main.h"
+/**
+ * _isalpha - iopopopop
+ * @c: is the checkeer
+ * Return: 0 if 1
+ */
 
 int _isalpha(int c)
 {
