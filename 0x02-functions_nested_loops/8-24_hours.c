@@ -4,16 +4,12 @@
 /**
  * jack_bauer - db hadi
  */
-
 void jack_bauer(void)
 {
-int i, j;
+int i;
 
-for (i = 0; i <= 23; i++)
+for (i = 0; i <= 24 * 60 - 1; i++)
 {
-for (j = 0; i <= 59; i++)
-{
-printf("%02d:%02d\n", i, j);
-}
+printf("%02d:%02d\n", i / 60, i % 60);
 }
 }
