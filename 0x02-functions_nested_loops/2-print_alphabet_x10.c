@@ -12,6 +12,7 @@ int j = 0;
 
 while (j < 10)
 {
+j++;
 for (i = 'a'; i <= 'z'; i++)
 {
 _putchar(i);
