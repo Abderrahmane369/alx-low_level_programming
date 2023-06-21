@@ -1,13 +1,11 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * oztt - eits a n function e
  * main - zeaazeaeaeaea
  * Description: its an autotmata
  */
 
-void oztt(void)
+int main(void)
 {
 int k;
 int sum = 0;
@@ -20,11 +18,6 @@ sum += k;
 }
 }
 printf("%d\n", sum);
-}
-
-int main(void)
-{
-oztt();
 
 return (0);
 }
