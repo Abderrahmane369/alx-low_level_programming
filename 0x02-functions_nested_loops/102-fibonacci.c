@@ -8,7 +8,7 @@
 
 int main() {
 int k;
-for (k = 2; k < 50; k++)
+for (k = 2; k < 52; k++)
 {
 int i;
 unsigned long a = 0;
@@ -23,9 +23,9 @@ b = sum;
 }
 
 printf("%ld", sum);
-if (k != 49)
+if (k != 51)
 printf(", ");
 }
-
+printf("\n");
 return 0;
 }
