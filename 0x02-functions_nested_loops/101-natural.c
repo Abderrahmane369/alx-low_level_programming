@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * main - zeaazeaeaeaea
- * Return: 0, and 
+ * Return: 0, wa bla bla
  */
 
 int main(void)
