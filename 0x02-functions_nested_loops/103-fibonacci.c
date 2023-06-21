@@ -2,7 +2,7 @@
 
 /**
  * main - i s a grf
- * Return: 0 if 
+ * Return: 0 if
  */
 
 int main(void)
@@ -25,10 +25,10 @@ a = b;
 b = sum;
 }
 if (sum > 4000000)
-   break;
+break;
 
 if (sum % 2 == 0)
-   suM += sum;
+suM += sum;
 
 }
 printf("%ld\n", suM);
