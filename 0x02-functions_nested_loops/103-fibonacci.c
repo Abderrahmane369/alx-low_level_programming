@@ -8,8 +8,9 @@
 int main(void)
 {
 int suM;
+int k;
 
-for (int k = 2; k < 50; k++)
+for (k = 2; k < 50; k++)
 {
 int i;
 unsigned long a = 0;
