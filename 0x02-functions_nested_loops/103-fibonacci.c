@@ -8,6 +8,7 @@
 int main(void)
 {
 unsigned long suM;
+
 int k;
 
 for (k = 2; k < 50; k++)
@@ -30,7 +31,7 @@ if (sum % 2 == 0)
    suM += sum;
 
 }
-printf("%ld", suM);
+printf("%ld\n", suM);
 
 return (0);
 }
