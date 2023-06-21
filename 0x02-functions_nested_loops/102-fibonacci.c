@@ -6,7 +6,8 @@
  * Return: 0 if it
  */
 
-int main() {
+int main(void)
+{
 int k;
 for (k = 2; k < 52; k++)
 {
@@ -27,5 +28,5 @@ if (k != 51)
 printf(", ");
 }
 printf("\n");
-return 0;
+return (0);
 }
