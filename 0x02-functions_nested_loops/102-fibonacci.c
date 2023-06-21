@@ -11,9 +11,9 @@ int k;
 for (k = 2; k < 50; k++)
 {
 int i;
-long long a = 0;
-long long b = 1;
-long long sum = 0;
+unsigned long a = 0;
+unsigned long b = 1;
+unsigned long sum = 0;
 
 for (i = 2; i <= k; i++)
 {
@@ -22,7 +22,7 @@ a = b;
 b = sum;
 }
 
-printf("%lld", sum);
+printf("%ld", sum);
 if (k != 49)
 printf(", ");
 }
