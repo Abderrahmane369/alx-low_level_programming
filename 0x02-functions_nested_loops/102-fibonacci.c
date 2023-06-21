@@ -7,8 +7,8 @@
  */
 
 int main() {
-
-for (int k = 2; k < 50; k++)
+int k;
+for (k = 2; k < 50; k++)
 {
 int i;
 long long a = 0;
