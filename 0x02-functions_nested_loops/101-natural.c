@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * main - zeaazeaeaeaea
- * Description: its an autotmata
+ * Return: 0, and 
  */
 
 int main(void)
