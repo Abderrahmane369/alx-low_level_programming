@@ -7,7 +7,7 @@
 
 int main(void)
 {
-int suM;
+unsigned long suM;
 int k;
 
 for (k = 2; k < 50; k++)
