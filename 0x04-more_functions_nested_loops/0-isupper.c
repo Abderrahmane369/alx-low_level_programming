@@ -3,6 +3,7 @@
 
 /**
  * _isupper - is a functioj
+ * @c: whenam
  * Return: 0 if is 1
  */
 
