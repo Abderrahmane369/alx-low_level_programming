@@ -2,22 +2,26 @@
 
 /**
  * print_triangle - tick
- * @n: SUp
+ * @size: SUp
  */
-
 void print_triangle(int size)
 {
 int a, b;
 
+if (size > 0)
+{
 for (a = 0; a < size; a++)
 {
 for (b = 0; b < size; b++)
 {
 if (b >= size - a - 1)
-putchar('#');
+_putchar('#');
 else
-putchar(32);
+_putchar(32);
 }
-putchar('\n');
+_putchar('\n');
 }
+}
+else
+_putchar('\n');
 }
