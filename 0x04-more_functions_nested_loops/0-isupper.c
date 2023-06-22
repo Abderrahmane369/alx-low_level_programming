@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
  * _isupper - is a functioj
@@ -7,7 +8,7 @@
 
 int _isupper(int c)
 {
-if (_isupper > 0)
+if (isupper(c) > 0)
 return (1);
 else
 return (0);
