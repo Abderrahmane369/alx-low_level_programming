@@ -14,6 +14,6 @@ if (i != 2 || i != 4)
 {
 _putchar(i + 48);
 }
-_putchar('\n');
 }
+_putchar('\n');
 }
