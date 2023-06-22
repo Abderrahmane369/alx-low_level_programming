@@ -16,6 +16,7 @@ _putchar(a  / 9 + 48);
 
 _putchar(a % 10 + 48);
 }
+if (i != 9)
 _putchar('\n');
 }
 }
