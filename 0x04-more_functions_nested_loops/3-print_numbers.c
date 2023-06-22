@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_numbers - achnahuwa
@@ -13,4 +12,5 @@ for (i = 0; i <= 9; i++)
 {
 _putchar(48 + i);
 }
+_putchar('\n');
 }
