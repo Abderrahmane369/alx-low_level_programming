@@ -14,3 +14,4 @@ for (k = 0; k < strlen(s); k++)
 {
 putchar(*(s + strlen(s) - (1 + k)));
 }
+}
