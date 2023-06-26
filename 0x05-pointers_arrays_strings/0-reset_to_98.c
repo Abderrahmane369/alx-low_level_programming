@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - ismzdsw
- * @*n: zeadza
+ * @n: zeadza
  * Return: 0 and a 1
  */
 
