@@ -10,11 +10,12 @@ void puts2(char *str)
 {
 unsigned long int k;
 
-for (k = 0; k < strlen(str); k++)
+Ifor (k = 0; k < strlen(str); k++)
 {
 if (k % 2 == 0)
 {
 putchar(str[k]);
 }
 }
+putchar('\n');
 }
