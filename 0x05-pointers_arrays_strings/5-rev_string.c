@@ -13,8 +13,8 @@ unsigned long int k;
 for (k = 0; k < strlen(s) / 2; k++)
 {
 char c = s[k];
-s[k] = s[strlen(s) - k];
-s[strlen(s) - k] = c;
+s[k] = s[strlen(s) - k - 1];
+s[strlen(s) - k - 1] = c;
 }
 putchar('\n');
 }
