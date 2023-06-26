@@ -8,13 +8,12 @@
 
 void rev_string(char *s)
 {
-char *str = "HOW ARE";
-char rstr[strlen(str) + 1];
-
 unsigned long int k;
 
-for (k = 0; k < strlen(str); k++)
+for (k = 0; k < strlen(s); k++)
 {
-rstr[k] = str[strlen(str) - 1 - k];
+char c = s[k];
+s[k] = s[strlen(s) - k];
+s[strlen(s) - k] = c;
 }
 }
