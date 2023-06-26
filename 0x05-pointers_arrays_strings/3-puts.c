@@ -3,7 +3,7 @@
 
 /**
  * _puts - tspeqius
- * @s - ezsqd
+ * @s: EOEE
  */
 
 void _puts(char *s)
