@@ -16,5 +16,4 @@ char c = s[k];
 s[k] = s[strlen(s) - k - 1];
 s[strlen(s) - k - 1] = c;
 }
-putchar('\n');
 }
