@@ -4,7 +4,7 @@
 /**
  * _strcpy - sodqz
  * @dest: ezae
- * @stc: eazepaqd
+ * @src: eazepaqd
  * Return: arr and a
  */
 
