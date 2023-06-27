@@ -22,3 +22,4 @@ if (k >= (strlen(str) - 1) / 2)
 putchar(str[k]);
 }
 }
+}
