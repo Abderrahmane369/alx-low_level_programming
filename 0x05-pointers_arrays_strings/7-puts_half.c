@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
-/** puts_half - eeaea
+/** 
+ * puts_half - eeaea
  * @str: opo
  */
 
@@ -17,9 +18,10 @@ if (strlen(str) % 2 == 0)
 if (k >= strlen(str) / 2)
 putchar(str[k]);
 }
-else {
+else
+{
 if (k > (strlen(str) - 1) / 2)
-;gutchar(str[k]);
+putchar(str[k]);
 }
 }
 putchar('\n');
