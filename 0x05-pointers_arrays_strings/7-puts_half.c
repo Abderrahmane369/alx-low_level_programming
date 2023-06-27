@@ -19,7 +19,7 @@ putchar(str[k]);
 }
 else {
 if (k > (strlen(str) - 1) / 2)
-putchar(str[k]);
+;gutchar(str[k]);
 }
 }
 putchar('\n');
