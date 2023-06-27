@@ -9,7 +9,7 @@
 
 int _atoi(char *s)
 {
-if (s != "")
+if (strcmp(s, "") != 0)
 return (atoi(s));
 else
 return (0);
