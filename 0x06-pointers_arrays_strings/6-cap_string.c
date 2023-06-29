@@ -7,20 +7,33 @@
  * @a: aaaaaaaaa
  * Return: deistrub 0 and 1
  */
-char *cap_string(char *a)
-{
-unsigned long int k;
+char *cap_string(char *str) {
+int capitalizeNext = 1;
 
-for (k = 0; k < strlen(a); k++)
-{
-if (a[k] == '\t' || a[k] == ' ' || a[k] == ',' || a[k] == ';' || a[k] == '.' || a[k] == '!' || a[k] == '?' || a[k] == '"' || a[k] == '(' || a[k] == ')' || a[k] == '{' || a[k] == '}')
-{
-if (a[k + 1] == ' ' || a[k + 1] == '\n')
-a[k + 2] = toupper(a[k + 2]);
-else
-a[k + 1] = toupper(a[k + 1]);
+for (int i = 0; str[i] != '\0'; i++) {
+if (capitalizeNext && islower(str[i])) {
+str[i] = toupper(str[i]);
+}
+capitalizeNext = 0;
+
+switch (str[i]) {
+case ' ':
+case '\t':
+case '\n':
+case ',':
+case ';':
+case '.':
+case '!':
+case '?':
+case '"':
+case '(':
+case ')':
+case '{':
+case '}':
+capitalizeNext = 1;
+break;
 }
 }
 
-return (a);
+return str;
 }
