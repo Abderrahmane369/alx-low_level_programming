@@ -19,7 +19,7 @@ if (a[k] == ',' || a[k] == ';' || a[k] == '.' || a[k] == '!' || a[k] == '?' || a
 if (a[k + 1] == ' ')
 a[k + 2] = toupper(a[k + 2]);
 else
-a[k + 1] = toupper(a[k + 2]);
+a[k + 1] = toupper(a[k + 1]);
 }
 }
 
