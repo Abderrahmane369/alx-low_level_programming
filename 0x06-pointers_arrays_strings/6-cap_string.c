@@ -4,7 +4,7 @@
 
 /**
  * cap_string - ezaea
- * @a: aaaaaaaaa
+ * @str: aaaaaaaaa
  * Return: deistrub 0 and 1
  */
 char *cap_string(char *str)
@@ -40,5 +40,5 @@ break;
 }
 }
 
-return str;
+return (str);
 }
