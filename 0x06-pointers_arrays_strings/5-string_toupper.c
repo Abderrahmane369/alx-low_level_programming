@@ -8,7 +8,7 @@
  * Return: t 1 AOR 0
  */
 
-char *string_toupper(char *a)
+char *string_toupper(char *)
 {
 int k;
 
