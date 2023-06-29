@@ -10,7 +10,7 @@
 
 char *cap_string(char *a)
 {
-int k;
+unsigned long int k;
 
 for (k = 0; k < strlen(a); k++)
 {
