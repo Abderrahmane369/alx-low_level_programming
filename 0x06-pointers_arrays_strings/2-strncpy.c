@@ -5,7 +5,8 @@
  * _strncpy - opopo
  * @dest: desto
  * @src: crs
- * @n: n
+ * @n: ni
+ * Return: 0 1
  */
 
 char *_strncpy(char *dest, char *src, int n)
