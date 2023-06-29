@@ -14,7 +14,7 @@ int k;
 
 for (k = 0; k < strlen(a); k++)
 {
-a[k] = 'a';
+a[k] = toupper(a[k]);
 }
 
 return (a);
