@@ -3,12 +3,12 @@
 
 /**
  * _strchr - op
- * @: s,
- * @: c
+ * @s: s,
+ * @c: c
  * Return: 0 1
  */
 
 char *_strchr(char *s, char c)
 {
-return strchr(s, c);
+return (strchr(s, c));
 }
