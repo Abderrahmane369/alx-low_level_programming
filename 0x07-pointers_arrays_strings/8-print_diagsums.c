@@ -7,7 +7,7 @@
  * @a: aaa
  */
 
-void print_diagsums(int a[][], int size)
+void print_diagsums(int *a, int size)
 {
 int k;
 int sum0 = 0;
