@@ -15,9 +15,9 @@ int sum1 = 0;
 
 for (k = 0; k < size; k++)
 {
-sum0 += a[k][k];
-sum1 += a[size - k - 1][size - k - 1];
+sum0 += a[size * k + k];
+sum1 += a[size * k + (size - k - 1)];
 }
 
-printf("%s, %s", sum0, sum1);
+printf("%d, %d", sum0, sum1);
 }
