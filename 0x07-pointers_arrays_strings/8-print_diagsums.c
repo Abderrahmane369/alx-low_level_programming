@@ -20,5 +20,5 @@ sum0 += a[size * k + k];
 sum1 += a[size * k + (size - k - 1)];
 }
 
-printf("%d, %d", sum0, sum1);
+printf("%d, %d\n", sum0, sum1);
 }
