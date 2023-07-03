@@ -14,7 +14,7 @@ int k;
 int sum0 = 0;
 int sum1 = 0;
 
-for (k = 0; k < size * size; k++)
+for (k = 0; k < size; k++)
 {
 sum0 += a[size * k + k];
 sum1 += a[size * k + (size - k - 1)];
