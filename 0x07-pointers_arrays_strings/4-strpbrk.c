@@ -1,7 +1,7 @@
 #include <string.h>
 #include "main.h"
 
-/** 
+/**
  * _strpbrk - hello
  * @s: s
  * @accept: apc
