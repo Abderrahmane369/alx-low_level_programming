@@ -1,10 +1,11 @@
 #include <string.h>
 #include "main.h"
 
-/** _strpbrk - hello
+/** 
+ * _strpbrk - hello
  * @s: s
  * @accept: apc
- * Return: aa
+ * Return: 0 , 1
  */
 
 char *_strpbrk(char *s, char *accept)
