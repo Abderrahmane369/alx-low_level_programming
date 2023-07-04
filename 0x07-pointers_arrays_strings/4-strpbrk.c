@@ -10,5 +10,18 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-return (strpbrk(s, accept));
+while (*s != '\0')
+{
+char *a = accept;
+while (*a)
+{
+if (*s == *a)
+{
+return s;
+}
+a++;
+}
+s++;
+}
+return (NULL);
 }
