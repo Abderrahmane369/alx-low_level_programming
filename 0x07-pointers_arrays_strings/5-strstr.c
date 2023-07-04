@@ -8,14 +8,14 @@
  * Return: 0 1
  */
 
+int k = 0;
+
 char *_strstr(char *haystack, char *needle)
 {
 char f[2];
 f[0] = *needle;
 f[1] = '\0';
    
-int k = 0;
-
 while (*needle)
 {
 k++;
