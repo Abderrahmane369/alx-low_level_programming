@@ -5,9 +5,6 @@
  * @n: no
  * @i: ittr
  * Return: der
- * _sqrt_recursion - ezplzel
- * @n:ezdk
- * Return: odfoo
  */
 
 int ittr_sqrt_recursion(int n, int i)
@@ -20,6 +17,11 @@ return (-1);
 
 return (ittr_sqrt_recursion(n, i + 1));
 }
+/**
+ * _sqrt_recursion - ezplzel
+ * @n:ezdk
+ * Return: odfoo
+ */
 
 int _sqrt_recursion(int n)
 {
