@@ -27,11 +27,11 @@ return (i_is_prime_number(n, i + 1));
 int is_prime_number(int n)
 {
 if (n < 0)
-return (-1);
+return (0);
 
 if (n <= 1)
 return (0);
 
-return (i_is_prime_number(n, 0));
+return (i_is_prime_number(n, 2));
 
 }
