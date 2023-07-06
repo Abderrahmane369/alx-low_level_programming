@@ -1,16 +1,13 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - ezplzel
- * @n:ezdk
- * Return: odfoo
- */
-
-/**
  * ittr_sqrt_recursion - EZAEA
  * @n: no
  * @i: ittr
  * Return: der
+ * _sqrt_recursion - ezplzel
+ * @n:ezdk
+ * Return: odfoo
  */
 
 int ittr_sqrt_recursion(int n, int i)
