@@ -19,12 +19,12 @@ return (i_is_prime_number(n, i + 1));
 }
 
 /**
- * _is_prime_number - ezaa
+ * is_prime_number - ezaa
  * @n: eza
  * Return: tur
  */
 
-int _is_prime_number(int n)
+int is_prime_number(int n)
 {
 if (n < 0)
 return (-1);
