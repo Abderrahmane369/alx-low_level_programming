@@ -15,7 +15,8 @@ while (k < argc - 1)
 {
 printf("%s\n", argv[k]);
 
-k++
+k++;
+
 }
 return (0);
 }
