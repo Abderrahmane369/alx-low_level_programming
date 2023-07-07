@@ -14,13 +14,15 @@ int k;
 int sum = 0;
 
 if (argc == 1)
-printf("Error\n");
+printf("0");
 else
 {
 for (k = 1; k < argc; k++)
 {
 if (atoi(argv[k]) != 0)
 sum += atoi(argv[k]);
+else
+printf("Error\n");
 }
 }
 
