@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - eza
@@ -7,10 +8,12 @@
  * Return: 0
  */
 
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 if (argc != 1)
-printf("%d\n", argv[1] * argv[2]);
+{
+printf("%d\n", atoi(n0) * atoi(n1));
+}
 
 else
 printf("Error");
