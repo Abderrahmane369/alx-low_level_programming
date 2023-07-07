@@ -30,7 +30,10 @@ break;
 }
 
 if (sum == 0)
+{
 printf("Error\n");
+return (1);
+}
 else
 printf("%d\n", sum);
 }
