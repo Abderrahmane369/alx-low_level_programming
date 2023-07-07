@@ -11,11 +11,10 @@
 int main(int argc, char *argv[])
 {
 int k;
-int sum;
+int sum = 0;
 
 if (argc == 1)
 printf("Error\n");
-
 else
 {
 for (k = 1; k < argc; k++)
@@ -25,7 +24,7 @@ sum += atoi(argv[k]);
 }
 }
 
-printf("%d", sum);
+printf("%d\n", sum);
 
 return (0);
 }
