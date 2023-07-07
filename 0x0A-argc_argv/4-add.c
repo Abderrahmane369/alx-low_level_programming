@@ -31,7 +31,7 @@ break;
 }
 
 if (sum == 0)
-printf("Error");
+printf("Error\n");
 else
 printf("%d\n", sum);
 
