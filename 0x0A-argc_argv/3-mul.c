@@ -12,7 +12,11 @@ int main(int argc, char *argv[])
 {
 if (argc != 1)
 {
-printf("%d\n", atoi(argv[2]) * atoi(argv[1]));
+int n0 = atoi(argv[0]);
+int n1 = atoi(argv[1]);
+int result = n0 * n1;
+
+printf("%d\n", result);
 }
 else
 printf("Error\n");
