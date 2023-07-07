@@ -7,7 +7,7 @@
  * Return: 0
  */
 
-int main(int argc, int argv[])
+int main(int argc, int *argv[])
 {
 if (argc != 1)
 printf("%d\n", argv[1] * argv[2]);
