@@ -14,7 +14,7 @@ int k;
 int sum = 0;
 
 if (argc == 1)
-printf("0\n");
+printf("%d\n", 0);
 else
 {
 for (k = 1; k < argc; k++)
