@@ -7,8 +7,9 @@
  * Return: 0
  */
 
-int main(int argc)
+int main(int argc, char *argv[])
 {
+if (*argv)
 printf("%d\n", argc);
 
 return (0);
