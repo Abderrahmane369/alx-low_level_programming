@@ -19,13 +19,20 @@ else
 {
 for (k = 1; k < argc; k++)
 {
-if (atoi(argv[k]) != 0)
 sum += atoi(argv[k]);
-else
-printf("Error\n");
+
+if (atoi(argv[k]) == 0)
+{
+sum = 0;
+break;
+}
+
 }
 }
 
+if (sum == 0)
+printf("Error");
+else
 printf("%d\n", sum);
 
 return (0);
