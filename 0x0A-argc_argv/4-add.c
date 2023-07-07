@@ -29,7 +29,10 @@ break;
 
 }
 
-if (sum == 0)
+if (argv[1] == 0 && argc == 2)
+printf("%d\n", 0);
+
+else if (sum == 0)
 {
 printf("Error\n");
 return (1);
