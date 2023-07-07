@@ -14,7 +14,7 @@ int k;
 int sum = 0;
 
 if (argc == 1)
-printf("0");
+printf("0\n");
 else
 {
 for (k = 1; k < argc; k++)
@@ -28,12 +28,12 @@ break;
 }
 
 }
-}
 
 if (sum == 0)
 printf("Error\n");
 else
 printf("%d\n", sum);
+}
 
 return (0);
 }
