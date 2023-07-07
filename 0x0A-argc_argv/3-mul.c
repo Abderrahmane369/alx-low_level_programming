@@ -15,7 +15,7 @@ if (argc != 1)
 printf("%d\n", atoi(argv[2]) * atoi(argv[1]));
 }
 else
-printf("Error");
+printf("Error\n");
 
 return (0);
 }
