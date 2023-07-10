@@ -12,17 +12,22 @@
 
 char *str_concat(char *s1, char *s2)
 {
+	unsigned k;
 	char *strcc;
+	char *cpstr = strcat(s1, s2);
 
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
 
-	strcc = malloc(strlen(s1) + strlen(s2) + 2);
+	strcc = malloc(strlen(cpstr) + 1);
 
 	if (strcc == NULL)
 		return (NULL);
 
-	strcpy(strcc, strcat(s1, s2));
+	for (k = 0; k < strlen(cpstr); k++)
+	{
+		strcc[k] = cpstr[k];
+	}
 
 	return (strcc);
 }
