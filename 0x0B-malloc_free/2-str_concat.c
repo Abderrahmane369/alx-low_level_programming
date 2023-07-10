@@ -28,13 +28,13 @@ str2 = "";
 else
 str2 = s2;
 
-strcpy(strcc, str1);
-strcat(strcc, str2);
-
 strcc = malloc(strlen(str1) + strlen(str2) + 1);
 
 if (strcc == NULL)
 return (NULL);
+
+strcpy(strcc, str1);
+strcat(strcc, str2);
 
 return (strcc);
 }
