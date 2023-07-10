@@ -14,19 +14,19 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
-	else
+
+	char *carr;
+
+	carr = malloc(sizeof(char) * (size));
+
+	for (k = 0; k < size; k++)
 	{
-		char *carr;
-
-		carr = malloc(sizeof(char) * (size + 1));
-
-		for (k = 0; k < size; k++)
-		{
-			carr[k] = c;
-		}
-
-		carr[size + 1] = '\0';
-		
-		return (carr);
+		carr[k] = c;
 	}
+
+	carr[size] = '\0';
+
+	free(carr);
+
+	return (carr);
 }
