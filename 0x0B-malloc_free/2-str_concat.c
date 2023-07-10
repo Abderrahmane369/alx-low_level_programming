@@ -13,21 +13,24 @@
 char *str_concat(char *s1, char *s2)
 {
 	unsigned int k;
-	char *strcc;
-	char *cpstr = strcat(s1, s2);
+        char *strcc;
+        char cstr[strlen(s1) + strlen(s2) + 1];
 
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
+        strcpy(cstr, s1);
+        strcat(cstr, s2);
 
-	strcc = malloc(strlen(cpstr) + 1);
+        if (s1 == NULL || s2 == NULL)
+                return (NULL);
 
-	if (strcc == NULL)
-		return (NULL);
+        strcc = malloc(strlen(s1) + strlen(s2) + 1);
 
-	for (k = 0; k < strlen(cpstr); k++)
-	{
-		strcc[k] = cpstr[k];
-	}
+        if (strcc == NULL)
+                return (NULL);
 
-	return (strcc);
+        for (k = 0; k < strlen(s1) + strlen(s2); k++)
+        {
+           strcc[k] = cstr[k];
+        }
+
+        return (strcc);
 }
