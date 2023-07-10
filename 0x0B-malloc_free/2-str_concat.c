@@ -15,9 +15,18 @@ char *str_concat(char *s1, char *s2)
 	unsigned int k;
         char *strcc;
         char *cstr;
+	char *str1;
+	char *str2;
 
-	if (s1 == NULL || s2 == NULL)
-                return (NULL);
+	if (s1 == NULL)
+                str1 = "";
+        else
+                str1 = s1;
+
+        if (s2 == NULL)
+                str2 = "";
+        else
+                str2 = s2;
 
 	cstr = malloc(strlen(s1) + strlen(s2) + 1);
 
