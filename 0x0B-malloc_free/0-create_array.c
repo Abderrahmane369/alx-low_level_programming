@@ -10,6 +10,8 @@
 
 char *create_array(unsigned int size, char c)
 {
+	int k;
+
 	if (size == 0)
 		return (NULL);
 	else
@@ -17,8 +19,6 @@ char *create_array(unsigned int size, char c)
 		char *carr;
 
 		carr = malloc(sizeof(char) * (size + 1));
-
-		int k;
 
 		for (k = 0; k < size; k++)
 		{
