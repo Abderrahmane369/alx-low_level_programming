@@ -12,7 +12,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned k;
+	unsigned int k;
 	char *strcc;
 	char *cpstr = strcat(s1, s2);
 
