@@ -25,7 +25,5 @@ char *create_array(unsigned int size, char c)
 
 	carr[size] = '\0';
 
-	free(carr);
-
 	return (carr);
 }
