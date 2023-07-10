@@ -12,7 +12,6 @@
 
 char *str_concat(char *s1, char *s2)
 {
-unsigned int k;
 char *strcc;
 char *str1;
 char *str2;
