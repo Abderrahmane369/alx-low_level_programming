@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * char *_strdup(char *str) - eaea
+ * _strdup - eaea
  * @str: aeeaea
  * Return: zaea
  */
