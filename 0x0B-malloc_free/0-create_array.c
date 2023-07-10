@@ -16,7 +16,7 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (NULL);
 
-	carr = malloc(sizeof(char) * size);
+	carr = (char *)malloc(sizeof(char) * size);
 
 	for (k = 0; k < size; k++)
 	{
