@@ -12,39 +12,30 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int k;
-        char *strcc;
-        char *cstr;
-	char *str1;
-	char *str2;
+unsigned int k;
+char *strcc;
+char *str1;
+char *str2;
 
-	if (s1 == NULL)
-                str1 = "";
-        else
-                str1 = s1;
+if (s1 == NULL)
+str1 = "";
 
-        if (s2 == NULL)
-                str2 = "";
-        else
-                str2 = s2;
+else
+str1 = s1;
 
-	cstr = malloc(strlen(str1) + strlen(str2) + 1);
+if (s2 == NULL)
+str2 = "";
 
-        if (cstr == NULL)
-                return (NULL);
+else
+str2 = s2;
 
-        strcpy(cstr, str1);
-        strcat(cstr, str2);
+strcpy(strcc, str1);
+strcat(strcc, str2);
 
-        strcc = malloc(strlen(str1) + strlen(str2) + 1);
+strcc = malloc(strlen(str1) + strlen(str2) + 1);
 
-        if (strcc == NULL)
-                return (NULL);
+if (strcc == NULL)
+return (NULL);
 
-        for (k = 0; k < strlen(str1) + strlen(str2); k++)
-        {
-           strcc[k] = cstr[k];
-        }
-
-        return (strcc);
+return (strcc);
 }
