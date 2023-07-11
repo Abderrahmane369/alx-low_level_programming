@@ -34,6 +34,7 @@ if (arr[k] == NULL)
 {
 free(arr[k];
 free(arr);
+}
 return (NULL);
 }
 }
