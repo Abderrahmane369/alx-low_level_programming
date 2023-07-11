@@ -33,9 +33,8 @@ char *argstostr(int ac, char **av)
 
 	for (k = 2; k < ac; k++)
 	{
+		strcat(s, "\n");
 		strcat(s, av[k]);
-		s[strlen(av[k])] = '\n';
-		s[strlen(av[k+1])] = '\0';
 	}
 
 	return (s);
