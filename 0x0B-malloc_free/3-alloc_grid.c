@@ -4,9 +4,9 @@
 #include <stdio.h>
 
 /**
- * str_concat - ea
- * @s1: o
- * @s2: op
+ * alloc_grid - ea
+ * @width: o
+ * @height: op
  * Return: sdaez
  */
 
@@ -21,6 +21,7 @@ return (NULL);
 arr = malloc(sizeof(int *) * height);
 
 if (arr == NULL)
+free(arr);
 return (NULL);
 
 for (k = 0; k < height; k++)
@@ -28,6 +29,7 @@ for (k = 0; k < height; k++)
 arr[k] = malloc(sizeof(int) * width);
 
 if (arr[k] == NULL)
+free(arr[k]);
 return (NULL);
 }
 
