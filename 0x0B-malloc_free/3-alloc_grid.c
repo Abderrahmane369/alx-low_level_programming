@@ -34,7 +34,7 @@ if (arr[k] == NULL)
 {
 for (j = 0; j < k; j++)
 {
-free(arr[j]):
+free(arr[j]);
 }
 free(arr);
 return (NULL);
