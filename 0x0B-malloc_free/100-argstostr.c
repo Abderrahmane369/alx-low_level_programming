@@ -19,13 +19,12 @@ char *argstostr(int ac, char **av)
     if (ac == 0 || av == NULL)
         return NULL;
 
-    // Calculate the total length including space for newline characters
     for (i = 0; i < ac; i++) {
         total_length += strlen(av[i]);
-        total_length++; // Add space for the newline character
+        total_length++;
     }
 
-    s = malloc(sizeof(char) * (total_length + 1)); // Add 1 for the null terminator
+    s = malloc(sizeof(char) * (total_length + 1));
 
     if (s == NULL)
         return NULL;
@@ -34,10 +33,10 @@ char *argstostr(int ac, char **av)
         for (j = 0; av[i][j] != '\0'; j++) {
             s[index++] = av[i][j];
         }
-        s[index++] = '\n'; // Add newline character after each argument
+        s[index++] = '\n';
     }
 
-    s[index] = '\0'; // Null-terminate the string
+    s[index] = '\0';
 
     return s;
 
