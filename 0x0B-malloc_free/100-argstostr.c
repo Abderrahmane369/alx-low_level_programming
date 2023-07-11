@@ -35,7 +35,7 @@ char *argstostr(int ac, char **av)
 	{
 		strcat(s, av[k]);
 		s[strlen(av[k])] = '\n';
-		s[strlen(av[k+1])] = '\0':
+		s[strlen(av[k+1])] = '\0';
 	}
 
 	return (s);
