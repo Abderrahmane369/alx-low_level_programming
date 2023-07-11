@@ -34,8 +34,8 @@ char *argstostr(int ac, char **av)
 	for (k = 2; k < ac; k++)
 	{
 		strcat(s, av[k]);
-		if (k != ac - 1)
-			s[strlen(av[k])] = '\n';
+		s[strlen(av[k])] = '\n';
+		s[strlen(av[k+1])] = '\0':
 	}
 
 	return (s);
