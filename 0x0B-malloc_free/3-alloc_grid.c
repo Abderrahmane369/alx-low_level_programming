@@ -32,7 +32,10 @@ arr[k] = malloc(sizeof(int) * width);
 
 if (arr[k] == NULL)
 {
-free(arr[k]);
+for (j = 0; j < k; j++)
+{
+free(arr[j]);
+}
 free(arr);
 return (NULL);
 }
