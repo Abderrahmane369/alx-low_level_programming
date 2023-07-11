@@ -13,7 +13,7 @@
 char *argstostr(int ac, char **av)
 {
 	char *str;
-	char *s;
+	char *s = "";
 	char *n = "\n";
 	int k;
 
