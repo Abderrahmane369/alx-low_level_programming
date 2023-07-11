@@ -16,11 +16,11 @@ char *s;
 int k;
 unsigned int len = 0;
 
-if (ac == 0|| av == NULL)
+if (ac == 0 || av == NULL)
 return (NULL);
 
 for (k = 0; k < ac; k++)
-{	
+{
 len += strlen(av[k]);
 }
 
