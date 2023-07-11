@@ -36,3 +36,6 @@ for (j = 0; j < width; j++)
 arr[k][j] = 0;
 }
 }
+
+return (arr);
+}
