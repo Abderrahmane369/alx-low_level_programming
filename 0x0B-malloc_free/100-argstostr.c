@@ -13,7 +13,6 @@
 char *argstostr(int ac, char **av)
 {
 	char *s;
-	char *n = "\n";
 	int k;
 	unsigned int len = 0;
 
@@ -35,7 +34,8 @@ char *argstostr(int ac, char **av)
 	for (k = 2; k < ac; k++)
 	{
 		strcat(s, av[k]);
-		strcat(s, n);
+		if (k != ac - 1)
+			s[strlen(av[k])] = '\n';
 	}
 
 	return (s);
