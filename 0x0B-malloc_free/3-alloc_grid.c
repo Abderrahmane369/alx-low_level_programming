@@ -22,7 +22,6 @@ arr = malloc(sizeof(int *) * height);
 
 if (arr == NULL)
 {
-free(arr);
 return (NULL);
 }
 
@@ -36,6 +35,9 @@ free(arr[k]);
 return (NULL);
 }
 }
+
+if (arr == NULL)
+free(arr);
 
 for (k = 0; k < height; k++)
 {
