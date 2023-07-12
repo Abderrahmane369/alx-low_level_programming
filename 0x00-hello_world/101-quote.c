@@ -7,9 +7,7 @@
 
 int main(void)
 {
-	fprintf(stderr, "and that piece of art is usef"
-			"ul\" - Dora Korpar," 
-			"2015-10-19\n");
-
+	fprintf(stderr, "and that piece of art is use");
+	fprintf(stderr, "ful\" - Dora Korpar, 2015-10-19");
 	return (1);
 }
