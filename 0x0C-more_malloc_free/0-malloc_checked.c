@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * malloc_checked - eazeaz
@@ -13,7 +14,7 @@ void *malloc_checked(unsigned int b)
 	void *a = malloc(b);
 
 	if (a == NULL)
-		return (98);
+		fprint("%d", 98);
 
 	return (a);
 }	
