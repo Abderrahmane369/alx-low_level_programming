@@ -35,7 +35,7 @@ return (NULL);
 
 strcpy(string, str1);
 
-for (k = 0; k < n; k++)
+for (k = 0; k < cn; k++)
 {
 string[strlen(string)] = str2[k];
 string[strlen(string) + 1] = '\0';
