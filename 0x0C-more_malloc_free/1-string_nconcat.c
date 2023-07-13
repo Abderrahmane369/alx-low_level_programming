@@ -18,8 +18,8 @@ char *str2 = s2;
 char *string;
 size_t cn = n;
 
-if (cn > strlen(s2))
-   cn = strlen(s2);
+if (cn > strlen(str2))
+   cn = strlen(str2);
 
 if (str1 == NULL)
 str1 = "";
