@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stddef.h>
-#include <stdlib.>
+#include <stdlib.h>
 
 /**
  * malloc_checked - eazeaz
