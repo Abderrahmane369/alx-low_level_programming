@@ -17,8 +17,6 @@ char *str1 = s1;
 char *str2 = s2;
 char *string;
 size_t cn = n;
-size_t len;
-unsigned int k;
 
 if (cn > strlen(s2))
    cn = strlen(s2);
