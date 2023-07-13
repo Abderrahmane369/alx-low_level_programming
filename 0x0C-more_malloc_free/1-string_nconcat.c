@@ -26,8 +26,8 @@ str1 = "";
 if (str2 == NULL)
 str2 = "";
 
-if (cn >= strlen(str2))
-cn = strlen(str2);
+if (cn >= strlen(str2) + 1)
+cn = strlen(str2) + 1;
 
 string = malloc(sizeof(char) * (strlen(str1) + cn + 1));
 
