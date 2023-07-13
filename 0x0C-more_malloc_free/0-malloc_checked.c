@@ -14,8 +14,7 @@ void *malloc_checked(unsigned int b)
 	void *a = malloc(b);
 
 	if (a == NULL)
-		fprintf(stderr, "2298");
-	return (0);
+		exit(98);
 
 	return (a);
 }
