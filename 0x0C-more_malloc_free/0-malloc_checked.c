@@ -14,7 +14,7 @@ void *malloc_checked(unsigned int b)
 	void *a = malloc(b);
 
 	if (a == NULL)
-		fprint("%d", 98);
+		fprintf("%d", 98);
 
 	return (a);
 }	
