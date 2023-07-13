@@ -16,10 +16,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 char *str1 = s1;
 char *str2 = s2;
 char *string;
-size_t cn = n;
+unsigned int cn = n;
 
 if (cn > strlen(str2))
-   cn = strlen(str2);
+cn = strlen(str2);
 
 if (str1 == NULL)
 str1 = "";
