@@ -13,28 +13,25 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+char *str1 = s1 == NULL? "": s1;
+char *str2 = s2 == NULL? "": s2;
+char *string;
+size_t cn = n;
+size_t len;
+unsigned int k;
 
-size_t s1_len = strlen(s1);
-size_t s2_len = strlen(s2);
-char *result;
+if (cn > strlen(str2))
+   cn = strlen(str2);
 
-if (s1 == NULL)
-s1 = "";
+string = malloc(sizeof(char) * (strlen(str1) + cn + 1));
 
-if (s2 == NULL)
-s2 = "";
+if (string == NULL)
+return (NULL);
 
-if (n >= s2_len)
-n = s2_len;
+memcpy(string, str1, strlen(str1));
+memcpy(string + strlen(str1), str2, cn);
+string[strlen(str1) + cn] = '\0';
 
-result = malloc(sizeof(char) * (s1_len + n + 1));
-if (result == NULL)
-return NULL;
-
-memcpy(result, s1, s1_len);
-memcpy(result + s1_len, s2, n);
-result[s1_len + n] = '\0';
-
-return result;
+return (string);
 }
 
