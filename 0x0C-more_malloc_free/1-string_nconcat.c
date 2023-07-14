@@ -32,8 +32,10 @@ string = malloc(sizeof(char) * (strlen(str1) + cn + 1));
 if (string == NULL)
 return (NULL);
 
-strcpy(string, str1);
-strncat(string, str2, cn);
+
+memcpy(string, str1, strlen(str1));
+memcpy(string + strlen(str1), str2, cn);
+string[strlen(str1) + cn] = '\0';
 
 return (string);
 }
