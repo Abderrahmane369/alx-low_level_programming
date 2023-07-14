@@ -17,8 +17,6 @@ char *str1 = s1 == NULL? "": s1;
 char *str2 = s2 == NULL? "": s2;
 char *string;
 size_t cn = n;
-size_t len;
-unsigned int k;
 
 if (cn > strlen(str2))
    cn = strlen(str2);
@@ -34,4 +32,3 @@ string[strlen(str1) + cn] = '\0';
 
 return (string);
 }
-
