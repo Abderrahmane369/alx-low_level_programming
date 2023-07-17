@@ -1,5 +1,7 @@
 #include "dog.h"
 #include <string.h>
+#include <stdlib.h>
+
 /**
  * init_dog - eaz
  * @d: eaa
