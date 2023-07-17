@@ -19,6 +19,6 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	strcpy(d->name, name);
 	strcpy(d->owner, owner);
 
-	free(name);
-	free(owner);
+	free(d->name);
+	free(d->owner);
 }
