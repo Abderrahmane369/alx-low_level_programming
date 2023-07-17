@@ -15,9 +15,8 @@ d->name = malloc(strlen(name) + 1);
 d->owner = malloc(strlen(owner) + 1);
 d->age = age;
 
-if (d->name == NULL || d->owner == NULL) {
+if (d->name == NULL || d->owner == NULL)
 return;
-}
 
 strcpy(d->name, name);
 strcpy(d->owner, owner);
