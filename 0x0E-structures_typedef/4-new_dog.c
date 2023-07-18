@@ -18,7 +18,10 @@ char *o = (owner == NULL) ? NULL : strdup(owner);
 dog_t *d = malloc(sizeof(dog_t));
 
 if (name == NULL || owner == NULL)
+{
+	free(d);
 	return (NULL);
+}
 
 if (d == NULL || o == NULL || n == NULL)
 {
