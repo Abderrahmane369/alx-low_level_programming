@@ -36,9 +36,9 @@ free(d->owner);
 return (NULL);
 }
 
-strcpy(d->name, n);
+strcpy(d->name, name);
 d->age = age;
-strcpy(d->owner, o);
+strcpy(d->owner, owner);
 
 return (d);
 }
