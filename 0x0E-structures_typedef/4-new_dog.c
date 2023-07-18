@@ -1,4 +1,6 @@
 #include "dog.h"
+#include <stddef.h>
+#include <stdlib.h>
 
 /**
  * new_dog - eaz
