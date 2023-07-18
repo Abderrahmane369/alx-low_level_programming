@@ -23,7 +23,7 @@ free(d);
 return (NULL);
 }
 
-d->name = malloc(sizeof(name));
+d->name = malloc(strlen(name) + 1);
 
 if (d->name == NULL)
 {
@@ -31,7 +31,7 @@ free(d);
 return (NULL);
 }
 
-d->owner = malloc(sizeof(owner));
+d->owner = malloc(strlen(owner) + 1);
 
 if(d->owner == NULL)
 {
