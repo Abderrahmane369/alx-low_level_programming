@@ -27,8 +27,8 @@ return (NULL);
 }
 
 d->name = n;
-d->owner = o;
 d->age = age;
+d->owner = o;
 
 return (d);
 }
