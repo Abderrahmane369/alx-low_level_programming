@@ -8,32 +8,27 @@
  * @name: za
  * @age: aez
  * @owner: eaz
- * Return: eza
+ * Return: ez
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-    dog_t *new_dog = malloc(sizeof(dog_t));
+        char *n = strdup(name);
+        char *o = strdup(owner);
+        dog_t *d = malloc(sizeof(dog_t));
 
-    if (new_dog == NULL)
-        return NULL;
+        if (d == NULL || o == NULL || n == NULL)
+        {
+                free(d);
+                free(n);
+                free(o);
 
-    new_dog->name = strdup(name);
-    if (new_dog->name == NULL)
-    {
-        free(new_dog);
-        return NULL;
-    }
+                return (NULL);
+        }
 
-    new_dog->owner = strdup(owner);
-    if (new_dog->owner == NULL)
-    {
-        free(new_dog->name);
-        free(new_dog);
-        return NULL;
-    }
+        d->name = n;
+        d->owner = o;
+        d->age = age;
 
-    new_dog->age = age;
-
-    return new_dog;
+        return (d);
 }
