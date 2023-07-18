@@ -20,6 +20,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (d == NULL)
 		return (NULL);
 
+	if (n == NULL || o == NULL)
+		return (NULL);
+
 	d->name = n;
 	d->owner = o;
 	d->age = age;
