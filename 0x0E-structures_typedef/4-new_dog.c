@@ -19,14 +19,6 @@ dog_t *d = malloc(sizeof(dog_t));
 d->name = malloc(sizeof(name));
 d->owner = malloc(sizeof(owner));
 
-if (name == NULL || owner == NULL)
-{
-free(d);
-free(d->name);
-free(d->owner);
-return (NULL);
-}
-
 if (d == NULL || d->name == NULL || d->owner == NULL)
 {
 free(d);
