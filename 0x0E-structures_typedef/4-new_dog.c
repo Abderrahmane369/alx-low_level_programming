@@ -32,9 +32,9 @@ free(o);
 return (NULL);
 }
 
-d->name = n;
+strcpy(d->name, n);
 d->age = age;
-d->owner = o;
+strcpy(d->owner, o);
 
 return (d);
 }
