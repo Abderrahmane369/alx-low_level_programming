@@ -21,10 +21,10 @@ d->owner = malloc(sizeof(owner));
 
 if (name == NULL || owner == NULL)
 {
-	free(d);
-	free(d->name);
-	free(d->owner);
-	return (NULL);
+free(d);
+free(d->name);
+free(d->owner);
+return (NULL);
 }
 
 if (d == NULL || d->name == NULL || d->owner == NULL)
