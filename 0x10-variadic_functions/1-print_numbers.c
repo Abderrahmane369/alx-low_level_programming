@@ -5,6 +5,7 @@
 /**
  * print_numbers - eza
  * @n: eza
+ * @separator: ezaea
  * @..: ezaa
  * Return: ezazea
  */
