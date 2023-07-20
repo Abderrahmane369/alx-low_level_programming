@@ -1,5 +1,8 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
+#include <string.h>
+#include <stdio.h>
+#include <stddef.h>
 
 /**
  * print_strings - eza
