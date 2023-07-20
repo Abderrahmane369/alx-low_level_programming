@@ -13,8 +13,8 @@
 
 int main(int argc, char *argv[])
 {
-int (*f)(int, int) = get_op_func(argv[2]);
-int result = f(atoi(argv[1]), atoi(argv[3]));
+int (*f)(int, int) = get_op_func(argv[2]) != NULL ? get_op_func(argv[2]) : NULL;
+int result = f != NULL? f(atoi(argv[1]), atoi(argv[3])) : 0;
 
 if (argc != 4)
 {
