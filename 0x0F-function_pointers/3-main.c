@@ -31,6 +31,7 @@ exit(99);
 if (strcmp(argv[2], "+") != 0 && strcmp(argv[2], "-") != 0 && is0)
 {
 printf("Error\n");
+result = f(atoi(argv[1]), atoi(argv[3]));
 exit(100);
 }
 
