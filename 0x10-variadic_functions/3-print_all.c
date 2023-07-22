@@ -1,3 +1,4 @@
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -34,7 +35,7 @@ sep = 1;
 
 break;
 case 'f':
-printf("%s%s", (sep) ? " ," : "",va_arg(args, double));
+printf("%s%f", (sep) ? " ," : "",va_arg(args, double));
 sep = 1;
 
 break;
