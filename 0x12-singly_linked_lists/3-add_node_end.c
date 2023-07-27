@@ -5,7 +5,7 @@
 
 /**
  * add_node_end - loo
- * @h: eaze
+ * @head: eaze
  * @str: ezae
  * Return: loo
  */
