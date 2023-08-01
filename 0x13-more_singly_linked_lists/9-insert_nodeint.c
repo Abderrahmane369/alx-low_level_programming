@@ -20,6 +20,8 @@ return (NULL);
 if (idx == 0)
 {
 new = malloc(sizeof(listint_t));
+if (!new)
+return (NULL);
 new->n = n;
 new->next = c;
 *head = new;
@@ -31,6 +33,8 @@ while (c)
 if (cI == idx - 1)
 {
 new = malloc(sizeof(listint_t));
+if (!new)
+return (NULL);
 new->n = n;
 new->next = c->next;
 c->next = new;
