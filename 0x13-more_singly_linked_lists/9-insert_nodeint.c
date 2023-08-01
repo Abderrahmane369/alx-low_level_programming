@@ -9,45 +9,37 @@
  * Return: eza
  */
 
-#include <stdlib.h>
-#include "lists.h"
-
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-listint_t *new_node, *current = *head;
-unsigned int current_idx = 0;
+listint_t *new, *c = *head;
+unsigned int cI = 0;
 
 if (!head)
 return (NULL);
 
 if (idx == 0)
 {
-new_node = malloc(sizeof(listint_t));
-if (!new_node)
-return (NULL);
-new_node->n = n;
-new_node->next = *head;
-*head = new_node;
-return (new_node);
+new = malloc(sizeof(listint_t));
+new->n = n;
+new->next = c;
+*head = new;
+return (new);
 }
 
-while (current)
+while (c)
 {
-if (current_idx == idx - 1)
+if (cI == idx - 1)
 {
-new_node = malloc(sizeof(listint_t));
-if (!new_node)
-return (NULL);
-new_node->n = n;
-new_node->next = current->next;
-current->next = new_node;
-return (new_node);
+new = malloc(sizeof(listint_t));
+new->n = n;
+new->next = c->next;
+c->next = new;
+return (new);
 }
 
-current = current->next;
-current_idx++;
+c = c->next;
+cI++;
 }
 
 return (NULL);
 }
-
