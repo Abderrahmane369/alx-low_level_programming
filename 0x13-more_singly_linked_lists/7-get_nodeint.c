@@ -17,11 +17,9 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	{
 		if (cI == index)
 			break;
-		else
-		{
-			n = n->next;
-			cI++;
-		}
+
+		n = n->next;
+		cI++;
 	}
 
 	return (n);
