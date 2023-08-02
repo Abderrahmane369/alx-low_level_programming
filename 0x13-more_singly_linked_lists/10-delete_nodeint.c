@@ -4,7 +4,7 @@
 /**
  * delete_nodeint_at_index - eza
  * @head: eza
- * @index:e za
+ * @index: e za
  * Return: zea
  */
 
@@ -33,4 +33,3 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	return (-1);
 }
-
