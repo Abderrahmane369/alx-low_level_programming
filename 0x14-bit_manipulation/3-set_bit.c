@@ -9,16 +9,14 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int p = 1U << index;
+	unsigned int p;
 
-	if ((*n | p) == *n)
-	{
-		*n -= p;
-	}
-	else
-	{
-		*n += p;
-	}
+	if (index >= sizeof(unsigned int) * 8)
+		return (-1);
+
+	p = 1U << index;
+
+	*n |= p;
 
 	return (1);
 }
