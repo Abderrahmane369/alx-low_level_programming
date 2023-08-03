@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <math.h>
 
 /**
  * binary_to_uint - za
@@ -10,30 +9,29 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	const char *bn = b;
-	int k = 0;
+	unsigned int t = 1;
 	unsigned int sum = 0;
-
-	if (!bn)
+	
+	if (!b)
 		return (0);
 
-	while (*bn)
+	while (*b)
 	{
 		b++;
 	}
 
-	*bn--;
+	b--;
 
-	while (*bn)
+	while (*b)
 	{
-		if (*bn != '0' && *bn != '1')
+		if (*b != '0' && *b != '1')
 			return (0);
 
-		if (*bn == '1')
-			sum += (unsigned int)pow(2, k);
+		if (*b == '1')
+			sum += t;
 
-		k++;
-		*bn++;
+		t *= 2;
+		b--;
 	}
 
 	return (sum);
