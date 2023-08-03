@@ -22,15 +22,15 @@ unsigned int binary_to_uint(const char *b)
 		b++;
 	}
 
+	*bn--;
+
 	while (*bn)
 	{
 		if (*bn != '0' && *bn != '1')
 			return (0);
 
 		if (*bn == '1')
-		{
 			sum += (unsigned int)pow(2, k);
-		}
 
 		k++;
 		*bn++;
