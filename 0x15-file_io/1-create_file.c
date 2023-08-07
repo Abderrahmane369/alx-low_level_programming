@@ -18,7 +18,7 @@ int create_file(const char *filename, char *text_content)
 	if (!filename)
 		return (-1);
 
-	f = txt? open(filename, O_CREAT | O_TRUNC | O_WRONLY, 600);
+	f = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 600);
 
 	if (f == -1)
 		return (-1);
