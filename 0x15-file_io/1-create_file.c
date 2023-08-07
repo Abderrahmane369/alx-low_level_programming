@@ -13,18 +13,17 @@
 int create_file(const char *filename, char *text_content)
 {
 	int f;
-	char *txt = text_content;
+	char *txt = text_content ? text_content : "";
 
 	if (!filename)
 		return (-1);
 
-	f = txt? open(filename, O_CREAT | O_TRUNC | O_WRONLY, 600) 
-		: open(filename, O_CREAT | O_TRUNC, 600);
+	f = txt? open(filename, O_CREAT | O_TRUNC | O_WRONLY, 600);
 
 	if (f == -1)
 		return (-1);
 
-	while (*txt && txt) 
+	while (*txt) 
 	{
 		if (write(f, txt, 1) == -1)
 		{
