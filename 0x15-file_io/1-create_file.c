@@ -13,7 +13,6 @@
 int create_file(const char *filename, char *text_content)
 {
 	int f;
-	ssize_t wbytes;
 	char *txt = text_content ? text_content : "";
 	
 	if (!filename)
