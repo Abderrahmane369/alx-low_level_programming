@@ -14,7 +14,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int f;
 	char *txt = text_content ? text_content : "";
-	
+
 	if (!filename)
 		return (-1);
 
@@ -23,7 +23,8 @@ int create_file(const char *filename, char *text_content)
 	if (f == -1)
 		return (-1);
 
-	while (*txt) {
+	while (*txt)
+	{
 		if (write(f, txt, 1) == -1)
 		{
 			close(f);
