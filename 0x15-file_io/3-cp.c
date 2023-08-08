@@ -44,6 +44,8 @@ int main(int argc, char **argv)
 	if (!buff)
 	{
 		dprintf(STDOUT_FILENO, "Error: Can't read from file%s\n", argv[1]);
+		close(f);
+		close(t);
 		exit(99);
 	}
 
@@ -53,6 +55,8 @@ int main(int argc, char **argv)
 	{
 		free(buff);
 		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		close(f);
+		close(t);
                 exit(98);
 	}
 	
@@ -62,6 +66,8 @@ int main(int argc, char **argv)
 	{
 		free(buff);
 		dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
+		close(f);
+		close(t);
 		exit(99);
 	}
 
@@ -78,7 +84,7 @@ int main(int argc, char **argv)
 		dprintf(STDOUT_FILENO, "Error: Can't close fd %d\n", t);
 		exit(100);
 	}
-e
+
 	free(buff);
 
 	return (0);
