@@ -23,23 +23,23 @@ int main(int argc, char **argv)
 	}
 
 	f = open(argv[1], O_RDONLY);
-	t = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 
-	if (f == -1)
+	if (f == -1 || !argv[1])
 	{
 		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		close(t);
 		exit(98);
 	}
 
-	if (t == - 1)
+	t = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
+
+	if (t == - 1 || !argv[2])
 	{
 		dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
 		close(f);
 		exit(99);
 	}
 
-	buff = malloc(sizeof(char) * 1024);
+	buff = malloc(1024);
 
 	if (!buff)
 	{
