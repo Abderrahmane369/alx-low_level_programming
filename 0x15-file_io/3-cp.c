@@ -78,7 +78,7 @@ int main(int argc, char **argv)
 		dprintf(STDOUT_FILENO, "Error: Can't close fd %d\n", t);
 		exit(100);
 	}
-
+e
 	free(buff);
 
 	return (0);
