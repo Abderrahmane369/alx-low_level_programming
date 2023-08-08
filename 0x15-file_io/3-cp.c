@@ -37,7 +37,7 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	buff = malloc(sizeof(1024));
+	buff = malloc(sizeof(char) * 1024);
 
 	if (!buff)
 	{
@@ -46,8 +46,6 @@ int main(int argc, char **argv)
 	}
 
 	rbytes = read(f, buff, 1024);
-
-	buff[rbytes] = '\0';
 
 	if (rbytes == -1)
 	{
