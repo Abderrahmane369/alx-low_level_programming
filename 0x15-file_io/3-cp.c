@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 	}
 
 	f = open(argv[1], O_RDONLY);
-	t = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
+	t = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0644);
 
 	if (f == -1)
 	{
