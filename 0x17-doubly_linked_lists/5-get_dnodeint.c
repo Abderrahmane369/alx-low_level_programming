@@ -4,7 +4,7 @@
  * get_dnodeint_at_index - index
  * @head: leha
  * @index: xedi
- * Return: l PLUS l equal 
+ * Return: l PLUS l equal
  */
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
@@ -14,7 +14,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	while (c)
 	{
-		if (_ == index)
+		if (index == _)
 			return (c);
 
 		c = c->next;
