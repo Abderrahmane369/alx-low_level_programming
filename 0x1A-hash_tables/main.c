@@ -13,6 +13,10 @@ int main(void)
     hash_table_t *ht;
 
     ht = hash_table_create(1024);
-    hash_table_set(ht, "betty", "cool");
+    hash_table_set(ht, "a", "aa");
+    hash_table_set(ht, "b", "bb");
+    hash_table_set(ht, "c", "cc");
+    hash_table_set(ht, "d", "dd");
+    printf("%s\n", ht->array[key_index((const unsigned char *)"d", ht->size)]->value);
     return (EXIT_SUCCESS);
 }
