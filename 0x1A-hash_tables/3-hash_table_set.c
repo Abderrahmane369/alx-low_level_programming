@@ -21,21 +21,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!new_Node)
 		return (0);
 
-	new_Node->key = strdup(key);
+	new_Node->key = key ? strdup(key) : NULL;
 
-	if (!new_Node->key)
-	{
-		free(new_Node);
-		return (0);
-	}
 	new_Node->value = value ? strdup(value) : NULL;
-
-	if (!new_Node->value)
-	{
-		free(new_Node->key);
-		free(new_Node);
-		return (0);
-	}
 
 	new_Node->next = (ht->array)[_];
 
