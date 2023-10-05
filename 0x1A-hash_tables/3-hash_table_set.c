@@ -26,8 +26,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	new_Node->next = ht->array[_];
 
-    if (ht->array[_])
-	    ht->array[_]->next = NULL;
+	if (ht->array[_])
+		ht->array[_]->next = NULL;
 
 	ht->array[_] = new_Node;
 
