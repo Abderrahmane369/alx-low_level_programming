@@ -9,14 +9,16 @@
 char *strdup(const char *str)
 {
 	size_t length = strlen(str);
-	char *duplicate = (char *)malloc(length + 1);
+	char *duplicate;
 
-	if (str)
+	if (!str)
 	{
 		return (NULL);
 	}
 
-	if (duplicate)
+	duplicate = (char *)malloc(length + 1);
+
+	if (!duplicate)
 	{
 		return (NULL);
 	}
