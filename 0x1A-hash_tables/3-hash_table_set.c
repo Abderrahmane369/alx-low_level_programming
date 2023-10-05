@@ -11,7 +11,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *new_Node;
-	unsigned int _ = key_index((const unsigned char *)key, ht->size);
+	unsigned long int _ = key_index((const unsigned char *)key, ht->size);
 
 	if (!key || !ht)
 		return (0);
@@ -26,7 +26,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	new_Node->next = ht->array[_];
 
-	ht->array[_]->next = NULL;
+    if (ht->array[_])
+	    ht->array[_]->next = NULL;
+
 	ht->array[_] = new_Node;
 
 	return (1);
