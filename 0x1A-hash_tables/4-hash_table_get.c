@@ -4,7 +4,6 @@
  * hash_table_get - ttttt
  * @ht: ht
  * @key: k
- * @value: bbbb
  * Return: i
  */
 
@@ -16,7 +15,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (!ht)
 		return (NULL);
 
-	while (_ < ht->size)
+	while (ht->size > _)
 	{
 		c = ht->array[_];
 
