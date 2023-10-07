@@ -19,7 +19,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (!ht->array)
 		return (NULL);
 
-	for (_ = 0; size < _; _++)
+	for (_ = 0; size > _; _++)
 		ht->array[_] = NULL;
 
 	ht->size = size;
