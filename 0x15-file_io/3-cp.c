@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	buff = malloc(1024);
+	buff = malloc(10000);
 
 	if (!buff)
 	{
@@ -57,11 +57,11 @@ int main(int argc, char **argv)
 		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		close(f);
 		close(t);
-                exit(98);
+		exit(98);
 	}
-	
+
 	wbytes = write(t, buff, rbytes);
-	
+
 	if (wbytes == -1 || wbytes != rbytes)
 	{
 		free(buff);
