@@ -12,5 +12,5 @@ school.o: school.c
 				$(CC) $< -o $@
 
 main.o: main.c a.h
-				$(CC) $< -o $@
+				$(CC) -c $< -o $@
 
