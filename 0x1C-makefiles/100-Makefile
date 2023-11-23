@@ -1,4 +1,5 @@
 CC = gcc
+COMPILER = gcc
 SRC = main.c school.c
 OBJ = $(patsubst %.c,%.o,$(SRC))
 NAME = school
@@ -7,10 +8,10 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 all: $(NAME)
 
 $(NAME): $(OBJ)
-				$(CC) $^ -o $@
+				$(COMPILER) $^ -o $@
 
 main.o: main.c
-				$(CC) -Wall -Werror -Wextra -pedantic -c $< -o $@
+				$(COMPILER) -Wall -Werror -Wextra -pedantic -c $< -o $@
 
 school.o: school.c
 				$(CC) -Wall -Werror -Wextra -pedantic -C $< -o $@
