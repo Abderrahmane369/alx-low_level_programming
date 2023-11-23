@@ -5,17 +5,23 @@
 def island_perimeter(grid):
     """ISLAND"""
     g = grid
-    w = []
-    h = []
+    w = 0
+    h = 0
 
-    for _ in grid:
-        w.append(sum(_))
+    for i, _ in enumerate(g):
+        a = [0 for _ in range(len(g))]
+
+        for j, __ in enumerate(_):
+            a[i] = g[i][j] | a[i]
+
+        h = sum(a)
 
     for i in range(len(g[0])):
-        a = []
+        a = [0 for _ in range(len(g[0]))]
+
         for j in range(len(g)):
-            a.append(g[j][i])
+            a[i] = g[j][i] | a[i]
 
-        h.append(sum(a))
+        w = sum(a)
 
-    return (max(w) + max(h)) * 2
+    return (w + h) * 2 
