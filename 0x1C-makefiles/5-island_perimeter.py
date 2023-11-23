@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """Modules"""
 
+
 def island_perimeter(grid):
+    """ISLAND"""
     g = grid
     w = []
     h = []
@@ -13,8 +15,7 @@ def island_perimeter(grid):
         a = []
         for j in range(len(g)):
             a.append(g[j][i])
-        
+
         h.append(sum(a))
 
     return (max(w) + max(h)) * 2
-
