@@ -10,7 +10,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 				$(COMPILER) $^ -o $@
 
-main.o: main.c
+main.o: main.c m.h
 				$(COMPILER) -Wall -Werror -Wextra -pedantic -c $< -o $@
 
 school.o: school.c
