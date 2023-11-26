@@ -5,6 +5,10 @@
 def island_perimeter(grid):
     """ISLAND"""
     g = grid
+
+    if g in {[], [[]]}:
+        return 0
+
     w = [0 for _ in range(len(g[0]))]
     h = [0 for _ in range(len(g))]
 
