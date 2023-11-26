@@ -11,9 +11,9 @@ def island_perimeter(grid):
     for i in range(len(g)):
         for j in range(len(g[0])):
             h[i] = h[i] | g[i][j]
-    
+
     for i in range(len(g[0])):
         for j in range(len(g)):
             w[i] = w[i] | g[j][i]
-    
+
     return (sum(w) + sum(h)) * 2
