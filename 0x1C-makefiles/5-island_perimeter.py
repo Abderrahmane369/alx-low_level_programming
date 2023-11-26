@@ -6,7 +6,7 @@ def island_perimeter(grid):
     """ISLAND"""
     g = grid
 
-    if g in {[], [[]]}:
+    if len(g) == 0:
         return 0
 
     w = [0 for _ in range(len(g[0]))]
